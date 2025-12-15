@@ -15,6 +15,11 @@ function generatePoem(event) {
 
   let poemInputElement = document.querySelector("#poem-input");
   console.log(poemInputElement.value);
+
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class= "blink">⏳ Generating a poem on ${poemInputElement.value} </div>`;
+
   let apikey = "ff69318boa02a4e62f1a9e845ad0e1t9";
 
   let context = `You are a  poem expert and love to write short poems about various topics. Write a 4 line poem in basic HTML and separate each line with a <br/>. do not wrap the text in html or talk about HTML in the poem. make sure to follow user instructions it should be signed by Zainab AI at the bottom in <strong></strong>`;

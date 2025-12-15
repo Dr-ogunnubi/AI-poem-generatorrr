@@ -11,24 +11,27 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="body-container">
       <header>
         <h1>AI poem generator</h1>
       </header>
       <main>
-        <form id="poem-form">
-          <input
-            type="text"
-            placeholder="Enter poem topic..."
-            autofocus
-            autocomplete="off"
-            class="poem-input"
-            id="poem-input"
-          />
-          <input type="submit" class="submit-btn" />
-        </form>
+        <div class="form-container">
+          <form id="poem-form">
+            <input
+              type="text"
+              placeholder="Enter poem topic..."
+              autofocus
+              autocomplete="off"
+              class="poem-input"
+              id="poem-input"
+            />
+            <input type="submit" class="submit-btn" />
+          </form>
+          <div class="hint">E.g love, flowers or colors</div>
+        </div>
       </main>
-      <div class="poem" id="poem"></div>
+      <div class="poem  hidden" id="poem" ></div>
       <footer>
         This AI project waas coded by
         <a href="http://github.com/Dr-ogunnubi" target="_blank"
